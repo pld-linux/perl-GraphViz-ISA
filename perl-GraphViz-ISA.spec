@@ -8,7 +8,7 @@ Summary:	GraphViz::ISA Perl module - Graphing @ISA hierarchies at run-time
 Summary(pl):	Modu³ Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie dzia³ania
 Name:		perl-GraphViz-ISA
 Version:	0.01
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
