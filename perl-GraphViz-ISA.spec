@@ -8,13 +8,13 @@ Summary:	GraphViz::ISA Perl module - Graphing @ISA hierarchies at run-time
 Summary(pl):	Modu³ Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie dzia³ania
 Name:		perl-GraphViz-ISA
 Version:	0.01
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GraphViz >= 0.11
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-GraphViz >= 0.11
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,7 +31,8 @@ hierarchie obiektów) z nazwy pakietu lub "pob³ogos³awionej" wielko¶ci.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -48,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/GraphViz/ISA.pm
+%{perl_vendorlib}/GraphViz/ISA.pm
 %{_mandir}/man3/*
