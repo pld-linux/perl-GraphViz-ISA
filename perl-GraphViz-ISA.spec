@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	GraphViz
-%define		pnam	ISA
+%define	pdir	GraphViz
+%define	pnam	ISA
 Summary:	GraphViz::ISA Perl module - graphing @ISA hierarchies at run-time
 Summary(pl):	Modu³ Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie dzia³ania
 Name:		perl-GraphViz-ISA
