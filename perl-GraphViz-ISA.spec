@@ -4,7 +4,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 %define		pnam	ISA
-Summary:	GraphViz::ISA Perl module - Graphing @ISA hierarchies at run-time
+Summary:	GraphViz::ISA Perl module -gGraphing @ISA hierarchies at run-time
 Summary(pl):	Modu³ Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie dzia³ania
 Name:		perl-GraphViz-ISA
 Version:	0.01
