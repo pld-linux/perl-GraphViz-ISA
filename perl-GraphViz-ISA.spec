@@ -6,7 +6,7 @@
 %define		pdir	GraphViz
 %define		pnam	ISA
 Summary:	GraphViz::ISA Perl module - graphing @ISA hierarchies at run-time
-Summary(pl):	Modu≥ Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie dzia≥ania
+Summary(pl.UTF-8):   Modu≈Ç Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie dzia≈Çania
 Name:		perl-GraphViz-ISA
 Version:	0.01
 Release:	3
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This class constructs a graph showing the `@ISA' hierarchy (note: not
 object hierarchies) from a package name or a blessed scalar.
 
-%description -l pl
-Ta klasa konstruuje graf obrazuj±cy hierarchiÍ @ISA (ale nie
-hierarchie obiektÛw) z nazwy pakietu lub "pob≥ogos≥awionej" wielko∂ci.
+%description -l pl.UTF-8
+Ta klasa konstruuje graf obrazujƒÖcy hierarchiƒô @ISA (ale nie
+hierarchie obiekt√≥w) z nazwy pakietu lub "pob≈Çogos≈Çawionej" wielko≈õci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
