@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	GraphViz
 %define		pnam	ISA
+%include	/usr/lib/rpm/macros.perl
 Summary:	GraphViz::ISA Perl module - graphing @ISA hierarchies at run-time
 Summary(pl.UTF-8):	Moduł Perla GraphViz::ISA - wizualizacja hierarchii @ISA w czasie działania
 Name:		perl-GraphViz-ISA
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	93b279c6fd57abd614ff71d34f8ed839
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/GraphViz-ISA/
 BuildRequires:	perl-GraphViz >= 0.11
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-GraphViz >= 0.11
 BuildArch:	noarch
